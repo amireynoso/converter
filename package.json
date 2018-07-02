@@ -1,0 +1,26 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "description": "Handy unit converter",
+  "main": "index.js",
+  "repository": "git@github.com:amireynoso/converter.git",
+  "author": "Ami Reynoso <amireynoso@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "convert-units": "^2.3.4",
+    "ejs": "^2.6.1",
+    "koa": "^2.5.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.4",
+    "nodemon": "^1.17.5",
+    "webpack": "^4.14.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "webpack",
+    "watch": "nodemon --watch src --watch index.js"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.0.8"
+  }
+}

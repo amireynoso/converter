@@ -1,0 +1,21 @@
+<form class="converter">
+  <fieldset class="converter-categories">
+    <select>
+      <% categories.forEach(function(category){ %>
+        <option value="<%= category.id %>"><%= category.name %></option>
+      <% }); %>
+    </select>
+  </fieldset>
+  <fieldset class="converter-input">
+    <input type="number" />
+    <select>
+      <option></option>
+    </select>
+  </fieldset>
+  <fieldset class="converter-output">
+    <input type="number" />
+    <select>
+      <option></option>
+    </select>
+  </fieldset>
+</form>
